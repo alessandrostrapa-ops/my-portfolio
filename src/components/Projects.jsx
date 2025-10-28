@@ -8,7 +8,7 @@ export default function Projects() {
     <section id="projects" className="py-20">
       <div className="max-w-6xl mx-auto px-6">
         {PROJECTS.map((p) => (
-          <div key={p.title} className="text-white">{p.title}</div>
+          <div key={p.title} className="text-slate-900 dark:text-white transition-colors">{p.title}</div>
         ))}
       </div>
     </section>

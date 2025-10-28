@@ -7,8 +7,8 @@ export default function ProjectCard({ title, desc, href }) {
                  hover:border-white/20 transition-all duration-300 group hover:scale-105" 
       role="article" 
       aria-label={title}>
-      <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-indigo-300 transition-colors">{title}</h3>
-      <p className="text-gray-300 mb-4">{desc}</p>
+  <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2 group-hover:text-indigo-300 transition-colors">{title}</h3>
+  <p className="text-slate-700 dark:text-gray-300 mb-4 transition-colors">{desc}</p>
       <a href={href} 
          target="_blank" 
          rel="noreferrer" 

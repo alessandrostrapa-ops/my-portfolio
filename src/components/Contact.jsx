@@ -2,8 +2,8 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-2xl font-semibold text-white mb-4">Contact</h2>
-        <p className="text-gray-300 mb-6">Interested in working together? I'm open to freelance and junior roles. Use the form below or reach out via LinkedIn / GitHub.</p>
+  <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4 transition-colors">Contact</h2>
+  <p className="text-slate-700 dark:text-gray-300 mb-6 transition-colors">Interested in working together? I'm open to freelance and junior roles. Use the form below or reach out via LinkedIn / GitHub.</p>
 
         <div className="mx-auto max-w-xl">
           <form action="https://formsubmit.co/robertstrapasson@gmail.com" method="POST" className="grid gap-4">
@@ -18,7 +18,7 @@ export default function Contact() {
                 name="name" 
                 required 
                 placeholder="Your name" 
-                className="w-full px-4 py-3 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-0" />
+                className="w-full px-4 py-3 bg-transparent text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-gray-400 focus:outline-none focus:ring-0 transition-colors" />
             </div>
 
             <div className="glass-panel group focus-within:scale-[1.02] transition-transform duration-300">
@@ -29,7 +29,7 @@ export default function Contact() {
                 type="email" 
                 required 
                 placeholder="you@example.com" 
-                className="w-full px-4 py-3 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-0" />
+                className="w-full px-4 py-3 bg-transparent text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-gray-400 focus:outline-none focus:ring-0 transition-colors" />
             </div>
 
             <div className="glass-panel group focus-within:scale-[1.02] transition-transform duration-300">
@@ -40,7 +40,7 @@ export default function Contact() {
                 rows="5" 
                 required 
                 placeholder="How can I help?" 
-                className="w-full px-4 py-3 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-0"></textarea>
+                className="w-full px-4 py-3 bg-transparent text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-gray-400 focus:outline-none focus:ring-0 transition-colors"></textarea>
             </div>
 
             <div className="flex items-center justify-center gap-4">

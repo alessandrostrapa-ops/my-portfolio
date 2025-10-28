@@ -15,7 +15,7 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
         >
           <p className="text-sm text-indigo-300 mb-2">Hi, my name is</p>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white leading-tight">
             Robert Alessandro Strapasson —{' '}
             <span className="text-indigo-300">
               <Typewriter
@@ -33,12 +33,12 @@ export default function Hero() {
               />
             </span>
           </h1>
-          <p className="mt-4 text-gray-300 max-w-2xl">
+          <p className="mt-4 text-slate-700 dark:text-gray-300 max-w-2xl transition-colors">
             I build maintainable, efficient applications across frontend and backend. I quickly learn new technologies and leverage AI tools like ChatGPT and GitHub Copilot to deliver solutions that meet real-world needs.
           </p>
           <div className="mt-6 flex items-center gap-4 justify-center md:justify-start">
             <a href="#projects" className="btn-primary">See my work</a>
-            <a href="#contact" className="inline-block border border-indigo-500 text-indigo-100 px-4 py-2 rounded-md">Contact me</a>
+            <a href="#contact" className="inline-block border border-indigo-500 text-indigo-700 dark:text-indigo-100 px-4 py-2 rounded-md transition-colors">Contact me</a>
           </div>
         </motion.div>
 

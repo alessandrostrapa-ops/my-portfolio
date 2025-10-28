@@ -17,8 +17,14 @@ export default function ThemeToggle() {
   return (
     <button
       aria-label="Toggle dark mode"
-      onClick={() => setIsDark(s => !s)}
-      className="text-gray-200 hover:text-white transition-colors"
+      onClick={() => {
+        // trigger a short fade overlay while theme changes
+        document.documentElement.classList.add('theme-fade')
+        setIsDark(s => !s)
+        // remove the fade class after the CSS transition
+        setTimeout(() => document.documentElement.classList.remove('theme-fade'), 500)
+      }}
+      className="text-slate-700 dark:text-gray-200 hover:text-slate-900 dark:hover:text-white transition-colors"
     >
       {isDark ? <FaSun /> : <FaMoon />}
     </button>

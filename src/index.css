@@ -16,6 +16,16 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Overlay used to create a fade effect when switching themes.
+   We add/remove the `theme-fade` class on <html> from JS to toggle opacity. */
+.theme-overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+.theme-fade .theme-overlay {
+  opacity: 1;
+}
+
 .avatar {
   width: 12rem;
   height: 12rem;
