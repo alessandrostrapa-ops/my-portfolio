@@ -26,6 +26,23 @@ html {
   opacity: 1;
 }
 
+/* Glass panel used for inputs, cards and buttons to stand out against the gradient.
+   Day: light translucent gray/white. Dark: darker translucent panel. */
+.glass-panel {
+  background-color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(15,23,42,0.06);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+  transition: background-color 250ms ease, border-color 250ms ease, transform 200ms ease;
+}
+.dark .glass-panel {
+  background-color: rgba(2,6,23,0.45);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.5);
+}
+
 .avatar {
   width: 12rem;
   height: 12rem;
